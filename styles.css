@@ -1,0 +1,94 @@
+/* Style for the body */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+  text-align: center;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Style for the header */
+header {
+  background-color: #f0f0f0;
+}
+
+/* Style for the nav */
+nav {
+  display: flex; /* Changed to flex */
+  justify-content: space-between; /* Added to distribute space */
+  width: 100%; /* Full width */
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Descendant selector to style only the nav image */
+nav img {
+  width: 10%;
+}
+
+/* Style for the main */
+main {
+  background-color: #f9f9f9;
+  font-size: 18px;
+}
+
+/* Style for the footer */
+footer {
+  background-color: #ddd;
+}
+
+/* Style for the h1 */
+h1 {
+  text-align: center;
+  font-family: 'Georgia', serif;
+  color: #333;
+}
+
+/* Style for the p (paragraphs) */
+p {
+  line-height: 1.6;
+}
+
+/* Style for the grid class with two columns */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%; /* Two columns of 40% each */
+  justify-content: space-between;
+  row-gap: 20px;
+  align-items: center;
+}
+
+/* Descendant selector to style only the images in the grid */
+.grid img {
+  width: 100%; /* Width set for grid images */
+}
+
+/* Style for the flex class */
+.flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Hover effect for links */
+a:hover {
+  color: #ff9900;
+}
+
+/* Style for nth-child */
+.grid img:nth-child(odd) {
+  border: 2px solid #333;
+}
